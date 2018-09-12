@@ -61,6 +61,22 @@ view: rep_table {
     sql: ${TABLE}.zip ;;
   }
 
+  dimension: lat {
+    type: zipcode
+    sql: ${TABLE}.lat ;;
+  }
+  dimension: long{
+    type: zipcode
+    sql: ${TABLE}.long ;;
+  }
+
+  dimension: location {
+    type: location
+    sql_longitude: ${TABLE}.long ;;
+    sql_latitude: ${TABLE}.lat ;;
+  }
+
+
   dimension: rep_name{
     type: string
     sql: CONCAT(${TABLE}.first_name, ' ', ${TABLE}.last_name) ;;
