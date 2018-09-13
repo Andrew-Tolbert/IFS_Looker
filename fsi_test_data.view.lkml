@@ -450,7 +450,7 @@ view: fsi_test_data {
   measure: sum_settled {
     type: sum
     sql: ${settled} ;;
-    drill_fields: [upper_highest_process,sum_settled]
+    drill_fields: [wcio_nature_of_injury_description,sum_settled]
 
   }
 
