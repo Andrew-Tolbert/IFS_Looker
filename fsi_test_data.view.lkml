@@ -458,6 +458,7 @@ view: fsi_test_data {
     type: average
     value_format: "#0;(#0)"
     sql: ${days_to_hearing} ;;
+    drill_fields: [carrier_type,avg_days_to_hearing]
   }
 
 }
