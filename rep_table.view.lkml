@@ -80,6 +80,10 @@ view: rep_table {
   dimension: rep_name{
     type: string
     sql: CONCAT(${TABLE}.first_name, ' ', ${TABLE}.last_name) ;;
+    link: {
+      label: "Go to Rep Dashboard"
+      url: "https://mashey.looker.com/dashboards/6?"
+    }
   }
 
 
