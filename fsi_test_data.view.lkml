@@ -418,6 +418,12 @@ view: fsi_test_data {
     drill_fields: [claim_identifier,claim_injury_type,accident_date,first_hearing_date,days_to_hearing,wcio_cause_of_injury_description,first_hearing_date,carrier_type]
   }
 
+  measure: closed_claims{
+    type: count_distinct
+    sql: ${claim_identifier} ;;
+    drill_fields: [claim_identifier,claim_injury_type,accident_date,first_hearing_date,days_to_hearing,wcio_cause_of_injury_description,first_hearing_date,carrier_type]
+  }
+
   measure: med_age_at_injury {
     type: median
     sql: ${age_at_injury} ;;
