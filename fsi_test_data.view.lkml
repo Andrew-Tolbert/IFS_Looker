@@ -450,6 +450,8 @@ view: fsi_test_data {
   measure: sum_settled {
     type: sum
     sql: ${settled} ;;
+    drill_fields: [claim_type,attorneyrepresentative,age_at_injury,sum_settled]
+
   }
 
   measure: avg_days_to_hearing {
